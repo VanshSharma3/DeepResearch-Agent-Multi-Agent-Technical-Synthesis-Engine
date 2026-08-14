@@ -4,6 +4,7 @@ langchain
 langgraph
 langchain-groq
 langchain-google-genai
+langchain-community
 tavily-python
 python-dotenv
 pydantic
