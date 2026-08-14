@@ -1,4 +1,4 @@
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "https://deepresearch-agent-multi-agent-technical.onrender.com";
 
 const form = document.getElementById("blogForm");
 const topicInput = document.getElementById("topicInput");
