@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Agent for Research</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="brand">
+      <div class="icon-box">AI</div>
+      <div class="title">
+        <h1>Research Agent</h1>
+        <p>What You Wanna Research on </p>
+      </div>
+    </div>
+    <div class="status-badge">
+      <div class="dot"></div>
+       Ready
+    </div>
+  </header>
+
+  <main>
+    <div class="left-panel">
+      <div class="card">
+        <div class="card-title">✨ Input</div>
+        <form id="blogForm">
+          <label for="topicInput">What topic do you want to generate?</label>
+          <textarea id="topicInput" placeholder="e.g., Explain The latest tech introduced ..." required></textarea>
+          <button type="submit" id="submitBtn">Generate Content</button>
+        </form>
+      </div>
+
+      <div id="insightsPanel" class="card hidden">
+        <div class="card-title">⚡ Execution Insights</div>
+        <div class="info-row">
+          <span>Mode</span>
+          <span id="modeBadge">-</span>
+        </div>
+        <div class="queries-container">
+          <span class="queries-label">Executed Queries:</span>
+          <ul id="queriesList" class="queries-list"></ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="output-card">
+      <div class="output-header">
+        <span class="header-title">Markdown Output</span>
+        <button id="copyBtn" class="copy-btn hidden">Copy Raw Markdown</button>
+      </div>
+      <div id="outputBody" class="output-body">
+        <div id="placeholder" class="placeholder-text">
+          Enter a prompt on the left to run your Python LangGraph agent.
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
